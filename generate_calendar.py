@@ -100,7 +100,7 @@ def write_calendar(sun_times_dict):
     html_out = sun_cal.formatyearpage(2015)
     print(html_out)
 
-    with open("sunrisesunset.htm", 'w') as f:
+    with open("sun_calendar.html", 'w') as f:
         f.write(html_out.decode(encoding='UTF-8'))
 
 

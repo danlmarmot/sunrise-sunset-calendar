@@ -2,6 +2,8 @@
 
 This is a short script to generate an HTML calendar of sunrise and sunset times for a given location.
 
+See sun_calendar_example.html for an example.
+
 ### To get started
 
 These instructions have been tested on a Mac running OS X 11 (El Capitan)
@@ -16,12 +18,9 @@ These instructions have been tested on a Mac running OS X 11 (El Capitan)
     pip install -r requirements.txt
 ```
    
-### Running the script.
+### Running the script
 
-1.  Run the script with this command:
-
-    ./generate_calendar.py
-    
+1.  Run the script with this command: ``` ./generate_calendar.py ```
 1.  Open the resulting HTML file in a browser.
 
 ### Customizing the calendar
