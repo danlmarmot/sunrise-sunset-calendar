@@ -15,7 +15,7 @@ def main():
     time_zone = get_timezone(args.timezone)
 
     sun_times_dict = create_sunrise_sunset_table(start_date, end_date, location, time_zone)
-    write_calendar(sun_times_dict)
+    write_calendar(sun_times_dict, args.year)
 
 
 def parse_args():
@@ -24,13 +24,13 @@ def parse_args():
     """
 
     parser = argparse.ArgumentParser(description=description_str)
-    parser.add_argument('-l', '--loc', action="store_true", dest='location',
+    parser.add_argument('-l', '--loc', action="store", dest='location',
                         default="32.7,-117.1",
                         help="location as lat,long.  Default: 32.7,-117.1")
-    parser.add_argument('-y', '--year', action="store_true", dest='year',
+    parser.add_argument('-y', '--year', action="store", dest='year', type=int,
                         default=str(datetime.now().year),
                         help="year.  Default: the current year, " + str(datetime.now().year))
-    parser.add_argument('-z', '--tz', action="store_true", dest='timezone',
+    parser.add_argument('-z', '--tz', action="store", dest='timezone',
                         default="US/Pacific",
                         help="timezone.  Default: US/Pacific")
 
@@ -91,13 +91,13 @@ def create_sunrise_sunset_table(start_date, end_date, location, local_time_zone,
     return sun_times_dict
 
 
-def write_calendar(sun_times_dict):
+def write_calendar(sun_times_dict, theyear):
     sun_cal = SunCalendar(
         firstweekday=calendar.SUNDAY,
-        theyear=2015,
+        theyear=theyear,
         sun_times_dict=sun_times_dict,
         css="calendar.css")
-    html_out = sun_cal.formatyearpage(2015)
+    html_out = sun_cal.formatyearpage(theyear)
     print(html_out)
 
     with open("sun_calendar.html", 'w') as f:
