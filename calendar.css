@@ -1,0 +1,84 @@
+table.monthCalendar {
+	BORDER-RIGHT: 1px double;
+	BORDER-TOP: 1px double;
+	BORDER-LEFT: 1px double;
+	BORDER-BOTTOM: 1px double;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #eeeeee
+}
+
+table.annualcalendar {
+    width: 100%;
+	white-space: normal;
+	line-height: 1;
+	font-weight: normal;
+	font-size: medium;
+	font-variant: normal;
+	font-style: normal;
+	display: table;
+	border-collapse: collapse;
+	/*border-spacing: 0px;*/
+	/*border-color: gray;*/
+}
+
+span.sunrise {
+	font-weight: bold;
+    font-size: 11px;
+    color: #666666;
+}
+
+span.sunset {
+	font-weight: bold;
+    font-size: 11px;
+    color: #666666;
+}
+
+td.currentMonth {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #808080;
+    padding: 4px;
+    TEXT-ALIGN: center
+}
+
+td.titleTable {
+    border-collapse: collapse;
+    border: 1px
+}
+
+td.titleCell {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+    BACKGROUND-COLOR: #ffbb00
+}
+
+td.dayCell {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+	FONT-SIZE: 16px;
+	FONT-WEIGHT: bold;
+	COLOR: #0033cc;
+	TEXT-ALIGN: center;
+	vertical-align: top;
+	border: 1px solid #e5dacd;
+	border-collapse: collapse;
+}
+
+td.emptyDayCell {
+	border: 1px solid #e5dacd;
+	border-collapse: collapse;
+}
+
+td.weekdayName {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+	font-weight: bold;
+    font-size: 13px;
+    text-align: center
+}
+
+td.monthCell {
+	vertical-align: top;
+}
+
