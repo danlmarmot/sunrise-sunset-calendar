@@ -2,7 +2,7 @@
 
 This is a short script to generate an HTML calendar of sunrise and sunset times for a given location.
 
-See sun_calendar_example.html for an example.
+A sample output calendar can be seen here: [sun_calendar_example.html](https://htmlpreview.github.io/?https://github.com/danlmarmot/sunrise-sunset-calendar/blob/master/sun_calendar_example.html)
 
 ### To get started
 
